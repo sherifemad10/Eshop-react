@@ -1,6 +1,6 @@
 import './App.css';
 import { Header, Rout, Footer} from '../src/component/index'
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import HomeProdects from './component/Homeprodect/homprodect';
 
@@ -14,6 +14,8 @@ function App() {
   const [shop, setshop]= useState(HomeProdects) 
   const [Search, setSearch] = useState('')
   const [cart, setcart] = useState ([])
+  // const navigate = useNavigate()
+
 
    // shop filter
 
@@ -47,20 +49,36 @@ const searchproduct = () =>{
 }
 
 // add to cart
-
-
 const addtocart = (product) =>{
-  const exist = cart.find((ele) => {
-    return ele.id === product.id
-  })
-  if (exist) {
-    alert("This Product Is Already In Your Cart")
-  }else{
-    setcart([...cart, {...product, qty:1}])
-     alert('added')
+if (localStorage.getItem("name")) {
+    const exist = cart.find((ele) => {
+      return ele.id === product.id
+    })
+    if (exist) {
+      alert("This Product Is Already In Your Cart")
+    }else{
+      setcart([...cart, {...product, qty:1}])
+       alert('added')
+    }
+  
+  }else {
+    alert("Register first to can buy your products")
+    // navigate("/login")
   }
+} 
 
-}
+// const addtocart = (product) =>{
+//   const exist = cart.find((ele) => {
+//     return ele.id === product.id
+//   })
+//   if (exist) {
+//     alert("This Product Is Already In Your Cart")
+//   }else{
+//     setcart([...cart, {...product, qty:1}])
+//      alert('added')
+//   }
+
+// }
 
   
   return (

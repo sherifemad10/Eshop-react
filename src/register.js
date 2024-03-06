@@ -1,4 +1,4 @@
-import { Route } from 'react-router'
+import { Route, useNavigate } from 'react-router'
 import './register.css'
 import Login from './component/login'
 import { Link } from 'react-router-dom'
@@ -6,10 +6,10 @@ import { useRef } from 'react'
 
 const Register = () => {
   <Route path="login" element={Login} />
-//   const name1 = document.getElementById("name")
-// const email = document.getElementById("email")
-// const password = document.getElementById("password")
+
 const user = localStorage.getItem("email")
+const navigate = useNavigate();
+
 
 const inputRef0 = useRef()
 const inputRef1 = useRef()
@@ -27,8 +27,8 @@ const inputRef2 = useRef()
     if (inputRef0.current.value === user ) {
       document.getElementById("already").style.display="block";
     } else {
-        window.location.href="/login";
-    }
+      navigate("/login")
+   }
   }
 }
 

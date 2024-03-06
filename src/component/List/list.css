@@ -640,7 +640,14 @@
 
       }
       .list .banner .bannimg img{
-        width: 250px;
+        width: 200px;
+      }
+      .list .banner .textright h2{
+        font-size: 35px;
+        color: #61398F;
+      }
+      .list .banner .textright h4{
+        font-size: 15px;
       }
       }
   

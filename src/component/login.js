@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './login.css'
 import { useRef } from 'react'
 
@@ -6,6 +6,7 @@ const Login = () => {
   
 const user = localStorage.getItem("name")
 const pass = localStorage.getItem("password")
+const navigate = useNavigate();
 
 
 const inputRef = useRef()
@@ -18,7 +19,7 @@ const lofin = (e) =>{
   }else {
      if(inputRef.current.value === user && inputRef1.current.value === pass ){
       setTimeout(()=>{
-        window.location.href="/"
+        navigate("/")
       },1000)
      }else{
       document.getElementById("warning").style.display ="flex"

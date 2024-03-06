@@ -15,7 +15,8 @@
   justify-content: space-between;
   margin: 0 10px;
   max-width: 100%;
-  padding: 10px 10px;
+  height: 70px;
+  padding: 10px;
   background-color: #8B0000;
   border-radius: 5px;
   position: relative;
@@ -56,12 +57,16 @@ marquee{
   align-items: center;
   gap: 20px;
 }
-.logo h1 a{
+.logo a h1{
   font-size: 40px;
   font-weight: bold;
   font-family: "Protest Riot", sans-serif;
   color: #8d0000;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.logo a{
   text-decoration: none;
 }
 
@@ -99,75 +104,10 @@ marquee{
 }
 
 
-/* .InputContainer {
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-  padding-left: 15px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
-  position: absolute;
-  right: 45%;
-  top: 10px;
-
-} */
-
-/* .input {
- max-width: 500px;
-  height: 100%;
-  border: none;
-  outline: none;
-  font-size: 0.9em;
-  caret-color: rgb(255, 81, 0);
-}
-
-.labelforsearch {
-  cursor: text;
-  padding: 0px 12px;
-}
-
-.searchIcon {
-  width: 13px;
-}
-
-.border {
-  height: 40%;
-  width: 1.3px;
-  background-color: rgb(223, 223, 223);
-}
-
-.micIcon {
-  width: 12px;
-}
-
-.micButton {
-  padding: 0px 15px 0px 12px;
-  border: none;
-  background-color: transparent;
-  height: 40px;
-  cursor: pointer;
-  transition-duration: .3s;
-}
-
-.searchIcon path {
-  fill: rgb(114, 114, 114);
-}
-
-.micIcon path {
-  fill: rgb(255, 81, 0);
-
-}
-
-.micButton:hover {
-  background-color: rgb(255, 230, 230);
-  transition-duration: .3s;
-  border-radius: 50%;
-} */
 /* //search */
+.sign a{
+  text-decoration: none;
+}
 .signup {
   --primary-color: #FF6347;
   --secondary-color: #fff;
@@ -355,7 +295,7 @@ button:hover .arrow:before {
   margin-top: 20px;
   transition-duration: .3s;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-  background-color: rgb(205, 9, 9);
+  background-color: red;
   display: none;
 }
 
@@ -393,6 +333,8 @@ button:hover .arrow:before {
   width: 125px;
   border-radius: 40px;
   transition-duration: .3s;
+  background-color: red;
+
 }
 
 .Btn1:hover .sign1 {
@@ -424,10 +366,11 @@ button:hover .arrow:before {
 }
 .usericon{
   font-size: 35px;
-  color: #FF6347;
+  color: #f1bbb2;
+  cursor: pointer;
 }
 .user h3{
-  color: #000;
+  color: #fff;
   font-weight: bolder;
 }
 .nav{
@@ -456,6 +399,7 @@ button:hover .arrow:before {
 }
 .info{
   display: flex;
+  justify-content: start;
   align-items: center;
 
 }
@@ -472,7 +416,7 @@ button:hover .arrow:before {
   cursor: pointer;
   position: absolute;
   right: 10px;
-  z-index: 4;
+  z-index: 10;
   display: none;
 }
 
@@ -489,7 +433,7 @@ button:hover .arrow:before {
 
 .line {
   fill: none;
-  stroke: white;
+  stroke: rgb(255, 94, 126);
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 3;
@@ -511,62 +455,6 @@ button:hover .arrow:before {
   stroke-dashoffset: -32.42;
 }
 
-/* mobile2 */
-.checkboxtoggler {
-  width: 3em;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7em;
-  cursor: pointer;
-  position: absolute;
-  z-index: 5;
-  right: 25px;
-  display: none;
-}
-
-.line-1 {
-  background: #df6447;
-  height: 0.3em;
-  border-radius: 10em;
-  transition-duration: 500ms;
-}
-
-.line-2 {
-  background: #df6447;
-  height: 0.3em;
-  border-radius: 10em;
-  transition-duration: 500ms;
-}
-
-.line-3 {
-  background: #df6447;
-  height: 0.3em;
-  border-radius: 10em;
-  transition-duration: 500ms;
-}
-
-#toggleChecker {
-  height: 3em;
-  width: 100%;
-  display: none;
-}
-
-#toggleChecker:checked + #togglerLable .checkboxtoggler .line-1 {
-  -webkit-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
-  -ms-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
-  transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
-}
-
-#toggleChecker:checked + #togglerLable .checkboxtoggler .line-2 {
-  -webkit-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
-  -ms-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
-  transform: rotate(-45deg) translateY(0em) translateX(0.1em);
-}
-
-#toggleChecker:checked + #togglerLable .checkboxtoggler .line-3 {
-  transform: scaleX(0);
-  transform-origin: left;
-}
 
 .moblienav{
   display: none;
@@ -580,14 +468,16 @@ button:hover .arrow:before {
   .moblienav{
     position: absolute;
     right: 10px;
-    top: 20px;
+    top: 10px;
     padding: 30px 10px;
-    background-color: #dfdfdf;
-    margin: 30px 0;
-    z-index: 10;
+    background-color: #f5f5f5;
+    /* margin: 30px 0; */
+    z-index: 9;
+    border-radius: 10px;
   }
   .moblienav .search{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
   }
   .moblienav .signup{
     margin-bottom: 10px;
@@ -602,7 +492,10 @@ button:hover .arrow:before {
     color: #000;   
     font-size: 20px;
     font-weight: 600; 
-    
+    padding: 20px;
+  }
+  .moblienav ul li:first-child{
+    margin-top: 30px;
   }
   marquee{
     font-size: 12px;
