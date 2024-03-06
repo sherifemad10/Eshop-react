@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    width: 100%;
+    padding: 30px 40px;
+    background-color: #f5f5f5;
+}
+
+.footer .container{
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 100%;
+}
+
+.footer .container .leftbox{
+    width: 30%;
+    padding: 20px;
+    border-right: 2px solid #bebdbd;
+ }
+
+ .footer .container .leftbox .box{
+   display: flex;
+   padding: 10px 20px;
+   margin-top: 15px;
+ }
+
+ .footer .container .leftbox .box .iconbox{
+    font-size: 26px;
+    color: crimson;
+    margin-right: 10px;
+  }
+
+  .footer .container .leftbox .box .detail h3{
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  .footer .container .rightbox{
+    padding: 10px 20px;
+    width: 69%;
+  }
+
+  .footer .container .rightbox .header{
+   max-width: 100%;
+   align-items: center;
+  }
+
+  .footer .container .rightbox .header h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Protest Riot", sans-serif;
+    color: #8d0000;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .footer .container .rightbox .header p{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+
+  }
+
+  .footer .container .rightbox .bottom{
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer .container .rightbox .bottom .links{
+    padding: 10px 20px;
+  }
+
+  .footer .container .rightbox .bottom .links h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer .container .rightbox .bottom .links ul li{
+    list-style: none;
+    color: #666464;
+    margin-bottom: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .footer .container .rightbox .bottom .links ul li:hover{
+   color: crimson;
+  }
+
+  .footer .container .rightbox .bottom .links ul li .icons{
+    color: crimson;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+   }
+
+   .footer-copyright p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+   }
+   .footer-copyright p a{
+    color: crimson;
+    text-decoration: none;
+    text-transform: capitalize;
+   }
+
+   @media (max-width: 850px) {
+    .footer .container .leftbox{
+      width: 100%;
+      border-bottom: 2px solid #bebdbd;
+      border-right: none;
+   }
+   .footer .container .leftbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer .container .leftbox .box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .container .rightbox{
+    width: 100%;
+  }
+  .footer .container .rightbox .bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+    }

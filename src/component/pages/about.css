@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about{
+    width: 100%;
+}
+.about .pagetitle h2{
+    font-size: 40px;
+    color: #030303a5;
+    margin: 50px;
+
+}
+
+.about .abouinfo{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 10px;
+    margin-left: 100px;
+}
+.about .abouinfo .aboutimg img{
+    width: 500px;
+    border-radius: 20px;
+    border:  2px solid #f6f6f6;
+    margin-right: 40px;
+
+}
+.about .abouinfo .detail{
+    width: 550px;
+}
+.about .abouinfo .detail h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.about .abouinfo .detail p{
+    line-height: 30px;
+}
+
+.about .videobox{
+    text-align: center;
+    margin: 60px 0;
+}
+.about .videobox h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.about .videobox .video{
+   text-align: center;
+}
+
+.about .videobox .video video{
+    width: 60%;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+.about .services {
+    width: 80%;
+    margin:  auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+    opacity: .7;
+    transition: .3s;
+    cursor: pointer;
+}
+.about .services:hover {
+    opacity: 1;
+}
+.about .services .feature img{
+    width: 70px;
+    padding: 10px;
+}
+
+
+
+@media (max-width: 1280px) {
+
+    .about .abouinfo .aboutimg img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .about .abouinfo .detail{
+        width: 100%;
+    }
+    
+  }
+
+
+@media (max-width: 700px) {
+    .about .abouinfo{
+        margin: auto;
+    }
+    .about .abouinfo .detail h2{
+      font-size: 30px;
+    }
+    
+    .video video{
+        width: 80%;
+    }
+    
+  }

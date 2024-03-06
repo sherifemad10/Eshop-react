@@ -1,23 +1,77 @@
-import logo from './logo.svg';
 import './App.css';
+import { Header, Rout, Footer} from '../src/component/index'
+import { BrowserRouter } from 'react-router-dom';
+import { useState } from 'react';
+import HomeProdects from './component/Homeprodect/homprodect';
+
+
+
+// add to cart
+    
 
 function App() {
+  // shop page prodect
+  const [shop, setshop]= useState(HomeProdects) 
+  const [Search, setSearch] = useState('')
+  const [cart, setcart] = useState ([])
+
+   // shop filter
+
+   const Filter = (x) =>{
+    const catefilter = HomeProdects.filter((prodect) =>{
+        return prodect.cat === x
+    })
+    setshop(catefilter)
+}
+
+const allproduct = () =>{
+    setshop(HomeProdects)
+}
+
+// search filter
+
+const searchlenght = (Search || []).length === 0
+const searchproduct = () =>{
+  if (searchlenght) {
+    alert("Please Search Something !" )
+    setshop(HomeProdects)
+  }else{
+  
+      const searchfilter = HomeProdects.filter((x) =>{
+        return x.cat === Search
+      })
+      setshop(searchfilter)
+  
+  }
+
+}
+
+// add to cart
+
+
+const addtocart = (product) =>{
+  const exist = cart.find((ele) => {
+    return ele.id === product.id
+  })
+  if (exist) {
+    alert("This Product Is Already In Your Cart")
+  }else{
+    setcart([...cart, {...product, qty:1}])
+     alert('added')
+  }
+
+}
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+     <Header Search= {Search} setSearch= {setSearch} searchproduct ={searchproduct}/>
+     <Rout shop={shop} Filter={Filter} allproduct={allproduct} addtocart= {addtocart} cart={cart} setcart={setcart}/>
+     <Footer/>
+    </BrowserRouter>
+    
+    
     </div>
   );
 }

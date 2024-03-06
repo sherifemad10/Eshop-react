@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.category{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px auto;
+
+}
+.earphone{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(180deg,rgb(0 0 0 / .9) 56%, rgb(0 0 0 / .7)  100%);
+}
+.earphone .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 10px;
+    margin-bottom: 60px;
+}
+.earphone .info h5{
+    color: #ffffff81;
+
+}
+ .earphone .info p{
+    color: #fff;
+    font-size: 30px;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+.earphone .title{
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+}
+ .earphone .title h2{
+    color: #ffffff5e;
+    font-size: 45px;
+    z-index: 1;
+}
+ .earphone .btnshop button{
+    background-color: #f42c37;
+    padding: 8px 17px;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    transition: .3s;
+}
+.earphone  .shopbtn:hover{
+    transform: scale(1.1);
+}
+
+.earphone img{
+    width: 230px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    z-index: 2;
+}
+
+.watch{
+    background-color: #fecb3e;
+    max-width: 100%;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 20px;
+}
+.watch .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 10px;
+    margin-bottom: 60px;
+}
+.watch .info h5{
+    color: #00000074;
+
+}
+.watch .info p{
+    color: #000;
+    font-size: 30px;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+.watch .title{
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+}
+
+.watch .title h2{
+    color: #ffffff5e;
+    font-size: 50px;
+    z-index: 1;
+}
+.watch .btnwat button{
+    background-color: #f42c37;
+    padding: 8px 17px;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    transition: .3s;
+}
+.watch .btnwat button:hover{
+    transform: scale(1.1);
+}
+
+.watch img{
+    width: 250px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.laptop{
+    background-color: #f4323d;
+    max-width: 100%;
+    width: 500px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 20px;
+}
+.laptop .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 10px;
+    margin-bottom: 60px;
+}
+.laptop .info h5{
+    color: #ffffff78;
+
+}
+.laptop .info p{
+    color: #fff;
+    font-size: 30px;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+.laptop .title{
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+}
+.laptop .title h2{
+    color: #ffffff5e;
+    font-size: 50px;
+    z-index: 1;
+}
+.laptop .btnlap button{
+    background-color: #fff;
+    padding: 8px 17px;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    transition: .3s;
+}
+.laptop .btnlap button:hover{
+    transform: scale(1.1);
+}
+
+.laptop img{
+    width: 250px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+
+@media (max-width: 900px) {
+    .watch{
+        width: 500px;
+    }
+    .earphone{
+        width: 500px;
+    }
+    }
+    
+
+    

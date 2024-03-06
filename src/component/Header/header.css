@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Protest+Riot&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+  width: 100%;
+}
+.topheader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+  max-width: 100%;
+  padding: 10px 10px;
+  background-color: #8B0000;
+  border-radius: 5px;
+  position: relative;
+}
+.icon{
+  font-size: 30px;
+  margin: 0 5px;
+  color: #E9E9E9;
+}
+marquee{
+  font-size: 20px;
+  font-weight: bold;
+  color: #dfdfdf;
+  position: absolute;
+  left: 50px;
+  top: 15px;
+  right: 65%;
+}
+
+.mid-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 15px;
+  max-width: 100%;
+}
+
+.sersign{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+
+.sign{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo h1 a{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Protest Riot", sans-serif;
+  color: #8d0000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* search */
+.search {
+  display: inline-block;
+  position: relative;
+}
+
+.search input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search button[type="submit"] {
+  background-color: #f1bbb2;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .9s ease;
+}
+
+.search button[type="submit"]:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+
+/* .InputContainer {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  padding-left: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  position: absolute;
+  right: 45%;
+  top: 10px;
+
+} */
+
+/* .input {
+ max-width: 500px;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+  caret-color: rgb(255, 81, 0);
+}
+
+.labelforsearch {
+  cursor: text;
+  padding: 0px 12px;
+}
+
+.searchIcon {
+  width: 13px;
+}
+
+.border {
+  height: 40%;
+  width: 1.3px;
+  background-color: rgb(223, 223, 223);
+}
+
+.micIcon {
+  width: 12px;
+}
+
+.micButton {
+  padding: 0px 15px 0px 12px;
+  border: none;
+  background-color: transparent;
+  height: 40px;
+  cursor: pointer;
+  transition-duration: .3s;
+}
+
+.searchIcon path {
+  fill: rgb(114, 114, 114);
+}
+
+.micIcon path {
+  fill: rgb(255, 81, 0);
+
+}
+
+.micButton:hover {
+  background-color: rgb(255, 230, 230);
+  transition-duration: .3s;
+  border-radius: 50%;
+} */
+/* //search */
+.signup {
+  --primary-color: #FF6347;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
+/* //sign up */
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-53 {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1;
+  margin: 0;
+
+}
+
+.btn-53:disabled {
+  cursor: default;
+}
+
+.btn-53:-moz-focusring {
+  outline: auto;
+}
+
+.btn-53 svg {
+  display: block;
+  /* vertical-align: middle; */
+}
+
+.btn-53 [hidden] {
+  display: none;
+}
+
+.btn-53 {
+  border: 1px solid;
+  font-size: 15px;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 800;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+  outline: none;
+  border: 0;
+
+}
+
+.btn-53 .original {
+  background: #42d17d;
+  color: #fff;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53:hover .original {
+  transform: translateY(100%);
+}
+
+.btn-53 .letters {
+  display: inline-flex;
+}
+
+.btn-53 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn-53:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
+/* //sign in */
+
+.Btn1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(205, 9, 9);
+  display: none;
+}
+
+/* plus sign */
+.sign1 {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign1 svg {
+  width: 17px;
+  position: absolute;
+  left: 30%;
+}
+
+.sign1 svg path {
+  fill: white;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btn1:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn1:hover .sign1 {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+
+.Btn1:hover .sign1 svg {
+  left: 10%;
+}
+/* hover effect button's text */
+.Btn1:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btn1:active {
+  transform: translate(2px ,2px);
+}
+
+/* //log out */
+
+.user{
+  text-align: center;
+  display: none;
+}
+.usericon{
+  font-size: 35px;
+  color: #FF6347;
+}
+.user h3{
+  color: #000;
+  font-weight: bolder;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav ul{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+  position: absolute;
+  left: 35%;
+}
+.nav ul .link{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  transition: .3s;
+}
+.nav ul .link:hover{
+  color: #00000087;
+}
+.info{
+  display: flex;
+  align-items: center;
+
+}
+.info p{
+  background-color: #ff634758;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* mobile */
+.hamburger {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  z-index: 4;
+  display: none;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 3em;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+/* mobile2 */
+.checkboxtoggler {
+  width: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  cursor: pointer;
+  position: absolute;
+  z-index: 5;
+  right: 25px;
+  display: none;
+}
+
+.line-1 {
+  background: #df6447;
+  height: 0.3em;
+  border-radius: 10em;
+  transition-duration: 500ms;
+}
+
+.line-2 {
+  background: #df6447;
+  height: 0.3em;
+  border-radius: 10em;
+  transition-duration: 500ms;
+}
+
+.line-3 {
+  background: #df6447;
+  height: 0.3em;
+  border-radius: 10em;
+  transition-duration: 500ms;
+}
+
+#toggleChecker {
+  height: 3em;
+  width: 100%;
+  display: none;
+}
+
+#toggleChecker:checked + #togglerLable .checkboxtoggler .line-1 {
+  -webkit-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+  -ms-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+  transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+}
+
+#toggleChecker:checked + #togglerLable .checkboxtoggler .line-2 {
+  -webkit-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+  -ms-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+  transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+}
+
+#toggleChecker:checked + #togglerLable .checkboxtoggler .line-3 {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.moblienav{
+  display: none;
+}
+
+
+
+
+
+@media  (max-width: 992px){
+  .moblienav{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    padding: 30px 10px;
+    background-color: #dfdfdf;
+    margin: 30px 0;
+    z-index: 10;
+  }
+  .moblienav .search{
+    margin-bottom: 10px;
+  }
+  .moblienav .signup{
+    margin-bottom: 10px;
+  }
+  .moblienav ul li{
+    list-style: none;
+    margin-bottom: 30px;
+
+  }
+  .moblienav ul li a{
+    text-decoration: none;
+    color: #000;   
+    font-size: 20px;
+    font-weight: 600; 
+    
+  }
+  marquee{
+    font-size: 12px;
+    position: absolute;
+    left: 50px;
+    top: 25px;
+    right: 70%;
+  }
+  .input {
+    max-width: 130px;
+   }
+}
+
+@media  (max-width: 928px){
+  .nav ul{
+    position: absolute;
+    left: 20%;
+  }
+}
+
+
+@media  (max-width: 775px){
+  .sersign{
+    background-color: #0d0e0d;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 30px 10px;
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+  .InputContainer {
+   margin-bottom: 40px;
+  
+  }
+  
+  .input {
+   max-width: 130px;
+  }
+  .checkboxtoggler{
+    display: flex;
+  }
+
+
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 10px;
+    display: none;
+  }
+  .nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+   
+  }
+  .nav ul .link{
+    color: #fff;
+    text-align: start;
+   
+  }
+
+  
+}
