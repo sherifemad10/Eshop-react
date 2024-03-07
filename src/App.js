@@ -1,6 +1,6 @@
 import './App.css';
 import { Header, Rout, Footer} from '../src/component/index'
-import { BrowserRouter, useNavigate } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { useState } from 'react';
 import HomeProdects from './component/Homeprodect/homprodect';
 

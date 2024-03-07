@@ -9,6 +9,7 @@ const Home = ({addtocart}) => {
       <Banner />
       <Category/>
       <List addtocart ={addtocart}/>
+       
     </div>
   )
 }

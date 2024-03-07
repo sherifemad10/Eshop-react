@@ -596,7 +596,9 @@
  
       .list .banner .bannimg img{
         width: 250px;
+      
       }
+      
       .list .banner .textright h2{
         font-size: 50px;
       }
@@ -621,6 +623,10 @@
   }
   .prodesctCatagory{
     width: 100%;
+  }
+  .list .banner .bannimg img{
+   z-index: -1;
+  
   }
 
     }
@@ -661,6 +667,56 @@
       }
       .list .banner .textleft h3{
         font-size: 35px;
+      }
+      .list .trending .container .left-box .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+
+      }
+      .list .trending .container .left-box .header .cate{
+        gap: 10px;
+
+      }
+      .list .trending .container .left-box{
+        width: 100%;
+      }
+      .list .trending .container .left-box .prodects .showmore{
+        margin-left: 50px;
+      }
+      .list .trending .container .left-box .prodects .container .box{
+        width: 100%;
+      }
+      .list .trending .container .right-box {
+        width: 100%;
+      }
+      .list .trending .container .right-box .right-container .testimnial .detali .img-box img{
+        margin-left: 40px;
+      }
+      .socialContainer{
+        width: 47px;
+        height: 47px;
+      }
+      .card {
+        padding: 0;
+      }
+      .list .banner{
+        display: none;
+      }
+      .prodesctCatagory .container{
+        width: 100%;
+      }
+      .list .prodesctCatagory .container .box .productbox{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        text-align: center;
+      }
+      .list .prodesctCatagory .container .box .productbox{
+        margin-bottom: 30px;
       }
       }
     
