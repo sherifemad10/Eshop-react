@@ -34,24 +34,25 @@ const Header = ({Search, setSearch, searchproduct}) => {
     const signin = useRef()
      
     function checked() {
-      // if (localStorage.getItem("name")) {
-      //   console.log(signup.current)
-      //   user.current.style.display ="block"
-      //   logout.current.style.display ="block"
-      //   usericon.current.innerHTML = localStorage.getItem("name")
-      //   signup.current.style.display ="none"
-      //   signin.current.style.display ="none"
-      // } else {
-      //   signup.current.style.display ="block"
-      //   signin.current.style.display ="block"
-      //   user.current.style.display ="none"
-      //   logout.current.style.display ="none"
+      if (localStorage.getItem("name")) {
+        console.log(signup.current)
+        user.current.style.display ="block"
+        logout.current.style.display ="block"
+        usericon.current.innerHTML = localStorage.getItem("name")
+        signup.current.style.display ="none"
+        signin.current.style.display ="none"
+      } else {
+        signup.current.style.display ="block"
+        signin.current.style.display ="block"
+        user.current.style.display ="none"
+        logout.current.style.display ="none"
 
 
-      // }
+      }
       
     }
-    checked()
+    
+    window.addEventListener('load', checked);
 
     const logout1 = () =>{
       navigate("/login")

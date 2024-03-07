@@ -49,6 +49,7 @@ const searchproduct = () =>{
 }
 
 // add to cart
+
 const addtocart = (product) =>{
 if (localStorage.getItem("name")) {
     const exist = cart.find((ele) => {
