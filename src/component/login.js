@@ -19,7 +19,8 @@ const lofin = (e) =>{
   }else {
      if(inputRef.current.value === user && inputRef1.current.value === pass ){
       setTimeout(()=>{
-        navigate("/")
+        // navigate("/")
+        window.location = "/"
       },1000)
      }else{
       document.getElementById("warning").style.display ="flex"
